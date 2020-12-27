@@ -1,0 +1,309 @@
+@media(max-width: 1250px){
+	.centrado{
+		width: 100%;
+	}
+
+	.tarjeta{
+		width: 16%;
+		margin: 1.4%; 
+	}
+
+	.separadores{
+		width: 26%;
+	}
+
+	aside{
+		width: 24%;
+	}
+
+	input[type="submit"]{
+		margin-right: 10px;
+	}
+
+	#articulos{
+		margin-left: 10px;
+		width: 69%;
+	}
+}
+
+@media(max-width: 1194px){
+	aside{
+		width: 20%;
+	}
+
+	input[type="submit"],
+	input[type="reset"]{
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	input[type="reset"]{
+		margin-bottom: 20px;
+	}
+
+	.caja{
+		height: auto;
+		min-height: 200px;
+		padding-bottom: 20px;
+	}
+
+	input[type="email"],
+	input[type="password"]{
+		width: 80%;
+	}
+
+	#navegadores img{
+		width: 35px;
+	}
+
+	aside input[type="button"]{
+		width: 15%;
+	}
+
+	footer h5{
+		font-size: 30px;
+		line-height: 55px;
+	}
+}
+
+@media(max-width: 1194px){
+	.separadores{
+		width: 25%;
+	}
+}
+
+@media(max-width: 984px){
+	article{
+		margin-top: 20px;
+	}
+
+	input[type="reset"]{
+		display: none;
+	}
+
+	input[type="submit"]{
+		margin-bottom: 10px;
+	}
+
+	.tarjeta{
+		height: 280px;
+	}
+
+	aside h3{
+		font-size: 25px;
+	}
+
+	.separadores{
+		margin: 30px;
+		width: 25%;
+	}
+
+	#blog{
+		margin-left: 50px;
+	}
+
+	footer h5{
+		font-size: 25px;
+	}
+
+	input[type="email"],
+	input[type="password"]{
+		width: 70%;
+	}
+
+	@media(max-width: 790px){
+
+		header{
+			height: 120px;
+			padding-top: 20px;
+
+		}
+
+		.tarjeta{
+			height: 255px;
+		}
+
+		.tarjeta:first-child {
+		    margin-left: 30px;
+		}
+
+		.tarjeta span {
+		    font-size: 40px;
+		    margin-top: 21px;
+		    margin-bottom: 27px;
+		}
+
+		.tarjeta h3{
+			font-size: 18px;
+		}
+
+		.tarjeta p{
+			font-size: 14px;
+		}
+
+		#banner h1{
+			font-size: 36px;
+		}
+
+		#blog{
+			float: none;
+			margin: 0px auto;
+
+			height: 57px;
+		}
+
+		#navCabecera{
+			float: none;
+			clear: both;
+			margin: 0px auto;
+		}
+
+		.separadores > img{
+			width: 110%;
+		}
+
+		#articulos{
+			width: 65%;
+		}
+
+		aside{
+			width: 24%;
+		}
+		
+		section article:last-child {
+			margin-bottom: 70px;
+		}
+
+		.separadores {
+		    margin: 20px;
+		    width: 27%;
+		}
+
+		#redes{
+			width: 90%;
+		}
+	}
+
+	@media(max-width: 790px){
+		footer{
+			min-height: 1270px;
+			padding-bottom: 20px;
+		}
+
+		footer h5{
+			margin-bottom: 30px;
+			font-size: 40px;
+		}
+
+		.separadores{
+			width: 90%;
+			margin-left: 30px;
+		}
+
+		.separadores > img {
+		    width: 60%;
+		}
+
+		#navegadores img{
+			width: 60px;
+		}
+
+		aside{
+			width: 90%;
+		}
+
+		#articulos{
+			width: 90%;
+			margin-left: 20px;
+		}
+
+		#formulario label{
+			margin-left: 10%;
+		}
+
+		#formulario label:first-child{
+			margin-left: 10%;
+		}
+
+		aside input[type="submit"]{
+			float: none;
+			width: 50%;
+			margin-left: 25%;
+		}
+
+		#formulario a{
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.estilosSpan{
+			width: 100%;
+			float: none;
+			padding: 0px;
+			border-radius: 0px;
+			font-size: 16px;
+			padding-left: 20px;
+		}
+
+		article h4 a{
+			font-size: 30px;
+			padding-top: 20px;
+		}
+
+		#banner h1{
+			font-size: 30px;
+		}
+
+	}
+
+	@media(max-width: 560px){
+		.tarjeta p{
+			display: none;
+		}
+
+		.tarjeta{
+			height: 160px;
+			margin: 1%;
+		}
+
+		.tarjeta span{
+			font-size: 35px;
+		}
+
+		.tarjeta h3{
+			font-size: 14px;
+		}
+
+		#articulos{
+			margin-left: 10px;
+		}
+
+		#banner h1{
+			font-size: 25px;
+		}
+	}
+
+	@media(max-width: 436px){
+		#navegadores img {
+		    width: 15%;
+		}
+
+		.tarjeta{
+			margin: .5%;
+		}
+
+		#banner h1{
+			font-size: 18px;
+		}
+
+		#navCabecera ul li{
+			padding: 12px;
+			padding-right: 22.7px;
+
+		}
+
+		.separadores{
+			margin-left: 20px;
+		}
+	}
+}

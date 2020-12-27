@@ -1,0 +1,616 @@
+@font-face {
+	font-family: "TrebuchetMS";
+	src:url(fonts/TrebuchetMS.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "BebasNeue";
+	src:url(fonts/BebasNeue.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WebsymbolsRegular';
+	src: url('fonts/websymbols-Regular-webfont.eot');
+	src: url('fonts/websymbols-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/websymbols-Regular-webfont.woff') format('woff'),
+		 url('fonts/websymbols-Regular-webfont.ttf') format('truetype'),
+		 url('fonts/websymbols-Regular-webfont.svg#WebsymbolsRegular') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: url('../img/pattern.png');
+}
+
+.icon{
+	font-family: "WebsymbolsRegular";
+}
+
+header{
+	background: black;
+	width: 100%;
+	height: 70px;
+	font-family: "BebasNeue";
+	color: white;
+}
+
+.centrado{
+	margin: 0px auto;
+	width: 1250px;
+}
+
+#blog{
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: #37bcf9;
+	margin-top: 5px;
+	margin-left: 100px;
+	overflow: hidden;
+}
+
+#blog:hover{
+	background: gray;
+}
+
+#blog span{
+	float: left;
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: 8px;
+	animation-name: rotarEngranaje;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotarEngranaje {
+	from { transform: rotateZ(0deg); }
+	to { transform: rotateZ(360deg); }
+}
+
+#blog:hover span{
+	animation: tuerca 500ms linear;
+}
+
+@keyframes tuerca{
+	0%{
+		transform: translateY(0%);
+	}
+	50%{
+		transform: translateY(200%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+#blog h3{
+	float: right;
+	margin: 0px auto;
+	margin-top: 5px;
+	font-size: 40px;
+	margin-right: 65px;
+}
+
+#blog:hover h3{
+	animation: letras 500ms linear;
+}
+
+@keyframes letras {
+	from { transform: translateX(200%); }
+	to { transform: translateX(0%); }
+}
+
+#navCabecera{
+	width: 400px;
+	float: right;
+	height: 60px;
+	margin-top: 5px;
+	margin-right: 100px;
+}
+
+#navCabecera ul{
+	list-style: none;
+}
+
+#navCabecera ul li{
+	float: left;
+	padding: 15px;
+	padding-right: 25.7px;
+}
+
+#navCabecera ul li a{
+	display: block;
+	font-size: 24px;
+	color: white;
+	transition: all 200ms;
+	text-decoration: none;
+}
+
+#navCabecera ul li a:hover{
+	color: blue;
+	transform: scale(1.5, 1.5);
+}
+
+
+#banner{
+	width: 90%;
+	border: 10px solid white;
+	height: 100px;
+	background: white;
+	box-shadow: 0px 0px 2px gray;
+	margin: 20px auto;
+	background: url('../img/bakbaner.png');
+	background-position: -200px -200px;
+	animation: transformacionBanner 10s linear;
+	overflow: hidden;
+}
+
+@keyframes transformacionBanner {
+	from { background-position: 0px 0px; }
+	to { background-position: -200px -200px; }
+}
+
+#banner h1{
+	display: block;
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	font-family: "BebasNeue";
+	line-height: 100px;
+	text-shadow: 2px 2px 1px black;
+	animation: textoAnimado 10s linear;
+}
+
+@keyframes textoAnimado {
+	0%{
+		transform: translateX(-600%) scale(5,5);
+		opacity: 1;
+	}
+	50%{
+		transform: translateX(600%) scale(5,5);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(-600%) scale(5,5);
+		text-shadow: none;
+		color: transparent;
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0%) scale(1,1);
+		text-shadow: 2px 2px 1px black;
+		color: white;
+		opacity: 1;
+	}
+}
+
+.tarjeta{
+	width: 200px;
+	height: 300px;
+	background: white;
+	text-align: center;
+	float: left;
+	margin: 22px;
+	border: 1px solid #ccc;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.tarjeta:hover{
+	background: #000;
+}
+
+.tarjeta:first-child{
+	margin-left: 40px;
+}
+
+.tarjeta span{
+	display: block;
+	font-size: 50px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.tarjeta:hover span{
+	font-size: 70px;
+	color: #37bcf9;
+	animation: mostrarIcono 500ms linear;
+}
+
+@keyframes mostrarIcono {
+	from { transform: translateY(-200%); }
+	to { transform: translateY(0%); }
+}
+
+.tarjeta h3{
+	color: #00538c;
+	font-weight: bold;
+	font-family: "TrebuchetMS";
+	margin-bottom: 20px;
+	font-size: 21px;
+}
+
+.tarjeta:hover h3{
+	color: white;
+	animation: mostrarTexto 500ms linear;
+}
+
+@keyframes mostrarTexto {
+	from { transform: translateY(-300%); }
+	to { transform: translateY(0%); }
+}
+
+.tarjeta p{
+	color: #0BB0BA;
+	font-family: "TrebuchetMS";
+	font-size: 15px;
+}
+
+.tarjeta:hover p{
+	color: white;
+	animation: mostrarTexto 500ms linear;
+}
+
+@keyframes mostrarTexto {
+	from { transform: translateY(-200%); }
+	to { transform: translateY(0%); }
+}
+
+aside{
+	width: 300px;
+	float: right;
+	min-height: 1200px;
+	font-family: "TrebuchetMS";
+	margin: 20px;
+}
+
+aside h3{
+	display: block;
+	width: auto;
+	height: 45px;
+	background: url('../img/pxgray.png'), white;
+	font-size: 30px;
+	margin-bottom: 5px;
+	line-height: 45px;
+	font-family: "BebasNeue";
+	font-weight: normal;
+	box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+#busqueda{
+	text-align: center;
+}
+
+aside input[type="text"]{
+	width: 85%;
+	height: 30px;
+	border-radius: 5px 0px 5px 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 1px inset gray;
+}
+
+aside input[type="text"]:focus{
+	color: #555;
+}
+
+aside input[type="button"]{
+	width: 10%;
+	height: 31.5px;
+	margin-top: 1px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	border-radius: 0px 5px 0px 0px;
+	box-shadow: 0px 0px 1px inset gray;
+	color: #555;
+	background: white;
+	margin-left: -7px;
+	cursor: pointer;
+}
+
+.caja{
+	width: 80%;
+	height: 240px;
+	background: white;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.3),0px 3px 7px rgba(0,0,0,.3), 0px 1px white inset, 0px -3px 2px rgba(0,0,0,.3) inset;
+	margin: 0px auto;
+	margin-bottom: 40px;
+}
+
+#formulario{
+	padding: 10px;
+}
+
+input[type="email"],
+input[type="password"]{
+	display: block;
+	width: 85%;
+	height: 30px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #ccc inset;
+	border-radius: 5px;
+	margin: 0px auto;
+	margin-top: 20px;
+	padding-left: 35px;
+}
+
+
+#formulario label{
+	position: absolute;
+	font-size: 20px;
+	margin-top: 25px;
+	margin-left: 15px;
+}
+
+#formulario label:first-child{
+	margin-left: 10px;
+	margin-top: 23px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+	width: 100px;
+	height: 35px;
+	padding: 10px;
+	background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: white;
+	font-family: "TrebuchetMS";
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+input[type="submit"]{
+	margin-right: 30px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+	box-shadow: 0px 0px 3px gray;
+}
+
+#formulario a{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+#redes span{
+	display: block;
+	font-size: 35px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.texto{
+	display: block;
+	position: absolute;
+	padding: 5px;
+	border: 1px solid gray;
+	margin-top: -31px;
+	margin-left: 72px;
+	height: 20px;
+	width: 70px;
+	border-radius: 20px;
+	text-align: center;
+	background: #F4F7FE;
+    transform: translateX(-200%);
+    transition: all 400ms;
+    opacity: 0;
+}
+
+#redes div:hover .texto{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+#redes{
+	width: 175px;
+}
+
+#articulos{
+	width: 850px;
+	float: left;
+}
+
+#articulos h2{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background: url('../img/pxgray.png'), white;
+	margin-top: 35px;
+	text-align: center;
+	font-size: 40px;
+	font-family: "BebasNeue";
+	letter-spacing: 3px;
+	font-weight: normal;
+	box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+}
+
+article{
+	margin-top: 40px;
+	background: white;
+	width: 100%;
+	height: auto;
+	font-family: "TrebuchetMS";
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 2px #ddd;
+	padding: 10px;
+}
+
+article h4 a{
+	text-decoration: none;
+	color: blue;
+	float: left;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+article p{
+	clear: both;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+.estilosSpan{
+	float: right;
+	margin: -10px;
+	height: 30px;
+	line-height: 30px;
+	padding: 4px;
+	background: #000;
+	color: white;
+	font-size: 13px;
+	border-radius: 0px 0px 0px 5px;
+}
+
+section article:last-child{
+	text-align: center;
+	height: 100px;
+	text-decoration: none;
+	line-height: 100px;
+}
+
+section article:last-child a{
+	text-decoration: none;
+	font-size: 40px;
+	display: block;
+	color: #00538c;
+	font-family: "BebasNeue";
+	letter-spacing: 3px;
+}
+
+section article:last-child:hover{
+	border-radius: 240px;
+	border: 10px solid #ccc;
+	animation: animacionArticulo 10s linear;
+	transition: all 3s;
+	background: #555;
+}
+
+section article:last-child a:hover{
+	color: white;
+	transition: all 3s;
+	text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+}
+
+
+@keyframes animacionArticulo {
+	0%{
+		border: 10px solid #37bcf9;
+	}
+	25%{
+		border: 10px solid green;
+	}
+	50%{
+		border: 10px solid yellow;
+	}
+	75%{
+		border: 10px solid white;
+	}
+	100%{
+		border: 10px solid #37bcf9;
+	}
+}
+
+.clearfix{
+	clear: both;
+	float: none;
+}
+
+footer{
+	width: 100%;
+	height: 470px;
+	background: #000;
+	text-decoration: none;
+}
+
+.separadores{
+	float: left;
+	width: 320px;
+	height: 370px;
+	margin: 40px;
+	font-family: "TrebuchetMS";
+	text-align: center;
+}
+
+footer h5{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: url('../img/pxgray.png'), white;
+	border-radius: 5px;
+	font-family: "BebasNeue";
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+footer ul{
+	margin-top: 20px;
+	text-align: left;
+	font-size: 25px;
+}
+
+footer ul li{
+	margin-top: 10px;
+	padding: 5px;
+	border-bottom: 1px solid white;
+}
+
+footer ul li a{
+	display: block;
+	height: 40px;
+}
+
+footer ul li:hover{
+	padding-left: 100px;
+	color: white;
+}
+
+footer ul li a:hover{
+	display: block;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: #37bcf9;
+	transition: all 300ms;
+}
+
+footer iframe{
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+	border: 5px solid white;
+	box-shadow: 0px 0px 5px gray;
+}
+
+#navegadores img{
+	width: 45px;
+}
+
+footer p{
+	color: white;
+}
