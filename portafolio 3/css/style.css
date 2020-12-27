@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#todo {
+  margin: 0px auto;
+  width: 95%;
+  box-shadow: 0px 0px 10px #ccc;
+  font-family: sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#todo header {
+  display: grid;
+  grid-template-columns: 63% 37%;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid lightgray;
+}
+#todo header h1 {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 20px;
+}
+#todo header nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+#todo header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 15px;
+  transition: all 300ms;
+}
+#todo header nav ul li a:hover {
+  background: green;
+}
+#todo #cuerpo {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+#todo #cuerpo aside {
+  margin-right: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 20px;
+}
+#todo #cuerpo aside h3 {
+  display: block;
+  border-bottom: 0.5px solid lightgray;
+  padding-bottom: 10px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 100;
+}
+#todo #cuerpo aside ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+#todo #cuerpo aside ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background: lightgray;
+  padding: 20px;
+  transition: all 300ms;
+}
+#todo #cuerpo aside ul li a:hover {
+  background: #444;
+  color: #eee;
+}
+#todo #cuerpo section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+#todo #cuerpo section article {
+  border-bottom: 1px solid lightgray;
+}
+#todo #cuerpo section article a {
+  color: #000;
+  text-decoration: none;
+  transition: all 300ms;
+}
+#todo #cuerpo section article a:hover {
+  color: green;
+}
+#todo #cuerpo section article p {
+  color: gray;
+}
+#todo footer {
+  height: 130px;
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  align-items: center;
+}
+#todo footer h2 {
+  color: gray;
+  font-style: italic;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1125px) {
+  header {
+    grid-template-columns: 1fr 40% !important;
+  }
+}
+@media (max-width: 1032px) {
+  header {
+    grid-template-columns: 1fr 50% !important;
+  }
+
+  section {
+    grid-template-columns: repeat(auto-fill, 47%) !important;
+  }
+  section article img {
+    width: 100%;
+    display: block;
+  }
+
+  aside {
+    margin-right: 0px !important;
+  }
+}
+@media (max-width: 841px) {
+  header {
+    grid-template-columns: 1fr 60% !important;
+  }
+}
+@media (max-width: 753px) {
+  header {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  section {
+    grid-template-columns: repeat(auto-fill, 46%) !important;
+  }
+
+  #cuerpo {
+    grid-template-columns: 30% 1fr !important;
+  }
+}
+@media (max-width: 667px) {
+  section {
+    grid-template-columns: 1fr !important;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 505px) {
+  #cuerpo {
+    grid-template-columns: 1fr !important;
+  }
+  #cuerpo aside ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 7px;
+  }
+
+  footer {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
