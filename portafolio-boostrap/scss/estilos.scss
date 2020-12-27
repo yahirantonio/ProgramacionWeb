@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'WebsymbolsRegular';
+	src: url('fonts/websymbols-Regular-webfont.eot');
+	src: url('fonts/websymbols-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/websymbols-Regular-webfont.woff') format('woff'),
+		 url('fonts/websymbols-Regular-webfont.ttf') format('truetype'),
+		 url('fonts/websymbols-Regular-webfont.svg#WebsymbolsRegular') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.icon{
+	font-family: "WebsymbolsRegular";
+}
+
+header{
+	height: 120px;
+	h1{
+		line-height: 120px;
+	}
+}
+
+nav{
+	ul{
+		list-style: none;
+		li{
+			a{
+				color: white;
+			}
+		}
+	}
+}

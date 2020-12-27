@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>boostrap</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+
+	<!-- css -->
+	<!-- file:///C:/Users/ekts/Desktop/portafolio-boostrap/index.html -->
+	<link rel="stylesheet" href="scss/normalize.css">
+	<link rel="stylesheet" href="scss/style.css">
+
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<header class="container-fluid">
+		<h1 class="container bg-primary text-white text-center line-height">Titulo de tu pagina</h1>
+	</header>
+
+	<nav class="container bg-dark ">
+		<ul class="row justify-content-around">
+			<li><a class="nav-link" href="#">Inicio</a></li>
+			<li><a class="nav-link" href="#">Pagina 1</a></li>
+			<li><a class="nav-link" href="#">Pagina 2</a></li>
+			<li><a class="nav-link" href="#">Pagina 3</a></li>
+			<li><a class="nav-link" href="#">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid row mb-5">
+		<section class="col-8">
+			<h2 class="text-center mt-4 ml-5">Contenidos de la seccion</h2>
+
+			<article class="container ml-3 pl-4 text-center mt-4">
+				<h3>Titulo del articulo</h3>
+				<img class="mt-2" src="https://picsum.photos/200/300?grayscale" alt="imagen de prueba">
+				<p class="text-left mt-4">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quasi cum, placeat in nam cumque vero quidem voluptate expedita autem fugit assumenda cupiditate veritatis, suscipit dolorum incidunt delectus aliquam repudiandae eius.</p>
+			</article>
+
+			<article class="container ml-3 pl-4 text-center mt-4">
+				<h3>Titulo del articulo</h3>
+				<img class="mt-2" src="https://picsum.photos/id/237/200/300" alt="imagen de prueba">
+				<p class="text-left mt-4">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quasi cum, placeat in nam cumque vero quidem voluptate expedita autem fugit assumenda cupiditate veritatis, suscipit dolorum incidunt delectus aliquam repudiandae eius.</p>
+			</article>
+
+			<article class="container ml-3 pl-4 text-center mt-4">
+				<h3>Titulo del articulo</h3>
+				<img class="mt-2" src="https://picsum.photos/seed/picsum/200/300" alt="imagen de prueba">
+				<p class="text-left mt-4">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quasi cum, placeat in nam cumque vero quidem voluptate expedita autem fugit assumenda cupiditate veritatis, suscipit dolorum incidunt delectus aliquam repudiandae eius.</p>
+			</article>
+		</section>
+
+		<aside class="col-4 shadow p-5">
+			<div>
+				<h2 class="mb-4">Contenido del aside</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore id qui vero numquam unde expedita, nihil veritatis temporibus quasi libero odit cupiditate maiores pariatur totam ullam fuga architecto beatae ratione.</p>
+			</div>
+
+			<div class="aside-texto mt-4">
+				<h2 class="mb-4">Otras paginas</h2>
+				<ul>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+					<li><a class="nav-link" href="#">Otros articulos</a></li>
+				</ul>
+			</div>
+
+			<div class="aside-texto mt-4">
+				<h2 class="mb-4">Iniciar secion</h2>
+				<form action="#">
+					<div class="form-group">
+						<label for="Email">Email: </label>
+						<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<label for="Password">Password: </label>
+						<input type="password" class="form-control" id="Password" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-primary">Iniciar sesion</button>
+					<button type="submit" class="btn btn-primary">Registrarse</button>
+				</form>
+			</div>
+
+			<div class="aside-texto mt-4">
+				<h2 class="mb-4">Acordeon</h2>
+				<div id="accordion" role="tablist">
+					<div class="card">
+						<div class="card-header" role="tab" id="headingOne">
+							<h5 class="mb-0">
+								<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									#Primer grupo
+								</a>
+							</h5>
+						</div>
+						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+							<div class="card-body">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia laudantium tempore, incidunt molestias eius, neque sequi qui vero odit facere aspernatur accusantium exercitationem accusamus quae, numquam, ex quam nesciunt corrupti.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" role="tab" id="headingTwo">
+							<h5 class="mb-0">
+								<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									#segundo grupo
+								</a>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="card-body">
+								Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Veniam eaque repellendus commodi harum corporis adipisci labore animi tempore, eligendi doloremque iste enim ad est omnis minus aliquid inventore eum quia?
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" role="tab" id="headingTwo">
+							<h5 class="mb-0">
+								<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+									#Tercer grupo
+								</a>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="card-body">
+								Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Veniam eaque repellendus commodi harum corporis adipisci labore animi tempore, eligendi doloremque iste enim ad est omnis minus aliquid inventore eum quia?
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</div>
+
+
+	<footer class="container bg-secondary">
+		<div class="row">
+			<div class="col-7 p-3 text-center">
+				<h3>Redes sociales</h3>
+				<a href="#" class="icon display-4 text-dark mx-4">y</a>
+				<a href="#" class="icon display-4 text-dark mx-4">t</a>
+				<a href="#" class="icon display-4 text-dark mx-4">f</a>
+				<a href="#" class="icon display-4 text-dark mx-4">@</a>
+			</div>
+			<div class="col-5 p-3">
+				<p>Esta Página esta desarrollada por Yahir Antonio Diaz Coronado&copy;</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
