@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!-- file:///C:/Users/ekts/Desktop/voleta%20electoral%202/index.html -->
+</head>
+<body>
+	<header>
+		<h2>PROCESO ELECTORAL FEDERAL 2017-2018</h2>
+		<h1>PRESIDENCIA</h1>
+		<h2>DE LOS ESTADOS UNIDOS MEXICANOS</h2>
+	</header>
+
+	<nav>
+		<form action="GET" name="datos_geoelectorales">
+			<div>
+				<label for="entidad">ENTIDAD FEDERATIVA</label>
+				<input type="text" id="entidad" name="entidad_federativa">
+			</div>
+			<div>
+				<label for="cp">CIRCUNSCRIPCION PLURINOMINAL</label>
+				<input type="text" class="mini" name="cir_plurinominal">
+			</div>
+			<div>
+				<label for="distrito">DISTRITO FEDERAL</label>
+				<input type="text" class="mini" name="distrito_federal">
+			</div>
+			<div id="lastdiv">
+				<label for="municipio">MUNICIPIO</label>
+				<input type="text" id="municipio" name="municipio">	
+			</div>
+		</form>
+	</nav>
+
+	
+<h2 id="principal">MARQUE EL RECUADRO DE SU PREFERENCIA</h2>
+
+	<article>
+		<section>
+			<img src="img/pan.png" alt="imagen del pan">
+			<p>PARTIDO ACCION NACIONAL</p>
+			<p>RICARDO ANAYA CORTEZ</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/pri.png" alt="imagen del pri">
+			<p>PARTIDO REVOLUCIONARIO INSTITUCIONAL</p>
+			<p>JOSE ANTONIO MEADE KURIBREÑA</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/prd.png" alt="imagen del prd">
+			<p>PARTIDO DE LA REVOLUCION DEMOCRATICA</p>
+			<p>RICARDO ANAYA CORTEZ</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/partidoverde.jpg" alt="imagen del verde">
+			<p>PARTIDO VERDE ECOLOGISTA DE MEXICO</p>
+			<p>JOSE ANTONIO MEADE KURIBREÑA</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/partidodeltrabajo.png" alt="imagen del pt">
+			<p>PARTIDO DEL TRABAJO</p>
+			<p>ANDRES MANUEL LOPEZ OBRADOR</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/movimientociudadano.png" alt="imagen de movimiento ciudadano">
+			<p>MOVIMIENTO CIUDADANO</p>
+			<p>RICARDO ANAYA CORTEZ</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/nuevalianza.png" alt="imagen de nueva alianza">
+			<p>NUEVA ALIANZA</p>
+			<p>JOSE ANTONIO MEADE KURIBREÑA</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/morena.jpg" alt="imagen de morena" id="morena">
+			<p>MORENA</p>
+			<p>ANDRES MANUEL LOPEZ OBRADOR</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz">
+		</section>
+		<section>
+			<img src="img/encuentrosocial.png" alt="imagen de encuentro social">
+			<p>ENCUENTRO SOCIAL</p>
+			<p>ANDRES MANUEL LOPEZ OBRADOR</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz" >
+		</section>
+		<section>
+			<p>CANDIDATA INDEPENDIENTE</p>
+			<p>JAIME HELIODORO RODRIGUEZ CALDERON "EL BRONCO"</p>
+			<img src="img/plantilla_cruz.png" alt="imagen de cruz" class="cruz" >
+		</section>
+		<div>
+			<p>CANDIDATA INDEPENDIENTE</p>
+			<p>MARGARITA ESTER ZAVALA</p>
+		</div>
+		<div id="last-section">
+			<p>SI DESEA VOTAR POR ALGUN/A CANDIDATO/A REGISTRAD/A ESCRIBA EN ESTE RECUADRO EL NOMBRE COMPLETO</p>
+			<input type="text" id="independiente">
+		</div>
+		<div id="section-vote">
+			<button type="button" disabled="true" id="votar">Votar</button>
+		</div>
+	</article>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
