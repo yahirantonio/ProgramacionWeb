@@ -1,0 +1,29 @@
+{
+  "name": "webpack-basics",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --devtool source-map",
+    "start": "webpack-dev-server -d"
+  },
+  "dependencies": {
+    "core-js": "^3.9.0",
+    "lodash-es": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.2.0",
+    "styles-loader": "^2.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
